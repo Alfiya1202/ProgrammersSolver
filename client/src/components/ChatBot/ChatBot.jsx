@@ -10,8 +10,8 @@ import "./ChatBot.css";
 
 
 const configuration = new Configuration({
-  organization: "org-5idiTRfgustGTl9K9ZoxUmov",
-  apiKey: "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",
+  organization: "org-hezqpXcjVouTqlErcC4GZN0k",
+  apiKey: "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",
 });
 
 const openai = new OpenAIApi(configuration);
