@@ -124,8 +124,17 @@
     white-space: pre-line;
   }
   
-  @media screen and (max-width: 1020px) {
+  /*@media screen and (max-width: 1100px) {
     .question-details-page {
       width: calc(100% - 24px);
-    }
+    }*/
+    /*.navbar {
+      min-width: 100%;*/
+      /*justify-content: space-evenly;*/
+   /* }
+    .nav-logo {
+      padding: 5px;
   }
+  }*/
+
+  

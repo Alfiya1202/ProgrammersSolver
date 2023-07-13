@@ -65,3 +65,47 @@
     border-radius: 2px;
     font-size: 13px;
   }
+
+  /*@media (max-width: 768px) {*/
+    /* Adjust the sidebar width for smaller screens */
+    /*.right-sidebar {
+      width: 100%;
+      max-width: none;
+    }*/
+  
+    /*.widget h4,
+    .right-sidebar-div-1,
+    .widget-tags h4 {
+      font-size: 12px; *//* Decrease the font size for smaller screens */
+   /* }
+  
+    .right-sidebar-div-1 .right-sidebar-div-2 {
+      flex-direction: column; *//* Stack the elements vertically */
+      /*align-items: flex-start;
+    }
+  
+    .widget-tags-div {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }*/
+
+  
+/*@media (max-width : 200px){
+  .right-sidebar {
+    width: 10%;
+   max-width: none;
+  }
+  .widget h4,
+    .right-sidebar-div-1,
+    .widget-tags h4 {
+      font-size: 12px;
+    
+    }
+    .right-sidebar-div-1 .right-sidebar-div-2 {
+    align-items:flex-start;
+      flex-direction:column; 
+    
+    } 
+}*/
+ 

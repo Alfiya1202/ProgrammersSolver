@@ -1,4 +1,4 @@
-import jwt from 'jsonwebtoken'
+import jwt from "jsonwebtoken"
 
 const auth = (req, res, next) => {
     try {
@@ -7,7 +7,7 @@ const auth = (req, res, next) => {
         let decodeData = jwt.verify(token, process.env.JWT_SECRET)
         req.userId = decodeData?.id 
 
-        next()
+        next();
     } catch (error) {
         console.log(error)
     }
