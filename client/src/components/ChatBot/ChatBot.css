@@ -1,4 +1,173 @@
 .Chatbot {
+  max-width: 1250px;
+  margin: auto;
+  margin-top: 70px;
+}
+
+.h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  color: black;
+  font-weight: 500;
+}
+
+.h1 .span {
+  font-weight: 600;
+  color: #5bef36;
+}
+
+.key {
+  font-weight: bold;
+}
+
+.user_msg {
+  color: #5bef36;
+  max-width: 52%;
+  padding: 15px;
+  border-radius: 50px;
+  border: solid 3px #5bef36;
+  text-align: right;
+  margin-left: 48%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.assistant {
+  background-color: #5bef36;
+  max-width: 52%;
+  padding: 15px;
+  border-radius: 50px;
+  color: white;
+}
+
+p span:first-child {
+  margin-right: 0;
+}
+
+.hide {
+  visibility: hidden;
+  display: none;
+}
+
+.typing {
+  background-color: #5bef36;
+  border-radius: 50px;
+  max-width: 52%;
+  padding: 15px;
+}
+
+
+.doubt-form {
+  text-align: center;
+  position: sticky;
+  bottom: 0px;
+  width: 100%;
+  padding: 5px 0px;
+}
+
+.doubt {
+  width: 100%;
+  height: 40px;
+  border: none;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-bottom: solid 2px #5bef36;
+  color: black;
+  outline: none;
+}
+
+.main-container{
+  min-height: calc(100vh - 100px);
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 20px;
+}
+
+.form-container{
+  text-align: center;
+  flex-grow: 1;
+  padding: 20px;
+  box-shadow: 0 10px 25px #94e29140,
+  0 20px 48px #94e29140,
+  0 1px 4px #94e29140;
+  /*box-shadow: 0 10px 25px rgb(239 130 54 / 25%),
+    0 20px 48px rgb(239 130 54 / 25%),
+    0 1px 4px rgb(239 130 54 / 50%);*/
+  border-radius: 20px;
+}
+
+.form-container h2{
+  font-size: 40px;
+  font-weight: 300;
+  padding: 5px 20px;
+}
+
+.form-container b{
+  font-weight: 400;
+}
+
+.form-container span{
+  font-weight: 500;
+  color: #5bef36;
+}
+
+.form-container p{
+  padding-bottom: 20px;
+  font-weight: 500;
+}
+.otp-input{
+  padding: 10px;
+  width: 80%;
+  border: none;
+  outline: none;
+  border-bottom: solid 2px #5bef36;
+  font-size: 15px;
+}
+
+.otp-input-2{
+  margin-top:20px;
+}
+
+.otp-input::placeholder{
+  font-size: 15px;
+  padding: 5px;
+}
+
+.otp-btn{
+  margin: 40px 0px 10px 0px;
+  width: 50%;
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #2fb942;
+  color: white;
+  transition: 0.3s;
+}
+
+.otp-btn:hover{
+  background-color: #409644;
+}
+
+@media screen and (max-width: 680px) {
+  .user_msg, .assistant{
+    max-width: 90%;
+    margin-left: 10px;
+  }
+}
+
+
+
+
+
+
+
+/*.Chatbot {
   max-width: 1020px;
   margin: auto;
   margin-top: 70px;
@@ -16,7 +185,7 @@
 
 .h1 .span {
   font-weight: 600;
-  color: #ef8236;
+  color: #976aa2;
 }
 
 .key {
@@ -24,11 +193,11 @@
 }
 
 .user_msg {
-  color: #ef8236;
+  color: #976aa2;
   max-width: 52%;
   padding: 15px;
   border-radius: 50px;
-  border: solid 3px #ef8236;
+  border: solid 3px #976aa2;
   text-align: right;
   margin-left: 48%;
   display: flex;
@@ -36,7 +205,7 @@
 }
 
 .assistant {
-  background-color: #ef8236;
+  background-color: #976aa2;
   max-width: 52%;
   padding: 15px;
   border-radius: 50px;
@@ -53,7 +222,7 @@ p span:first-child {
 }
 
 .typing {
-  background-color: #ef8236;
+  background-color: #976aa2;
   border-radius: 50px;
   max-width: 52%;
   padding: 15px;
@@ -74,7 +243,7 @@ p span:first-child {
   border: none;
   padding: 10px;
   font-size: 1.2rem;
-  border-bottom: solid 2px #ef8236;
+  border-bottom: solid 2px #5bef36;
   color: black;
   outline: none;
 }
@@ -97,5 +266,110 @@ p span:first-child {
 
 .main-container, .otp-btn{
   font-size: medium;
+}*/
+
+
+
+
+
+
+
+
+
+
+/*.Chatbot {
+  max-width: 1250px;
+  margin: auto;
+  margin-top: 70px;
 }
 
+.h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  color: black;
+  font-weight: 500;
+  justify-content: center;
+}
+
+.h1 .span {
+  font-weight: 600;
+  color: #5bef36;
+}
+
+.key {
+  font-weight: bold;
+}
+
+.user_msg {
+  color: #5bef36;
+  max-width: 52%;
+  padding: 15px;
+  border-radius: 50px;
+  border: solid 3px #5bef36;
+  text-align: right;
+  margin-left: 48%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.assistant {
+  background-color: #5bef36;
+  max-width: 52%;
+  padding: 15px;
+  border-radius: 50px;
+  color: white;
+}
+
+p span:first-child {
+  margin-right: 0;
+}
+
+.hide {
+  visibility: hidden;
+  display: none;
+}
+
+.typing {
+  background-color: #5bef36;
+  border-radius: 50px;
+  max-width: 52%;
+  padding: 15px;
+}
+
+
+.doubt-form {
+  text-align: center;
+  position: sticky;
+  bottom: 0px;
+  width: 100%;
+  padding: 2% 5%;
+}
+
+.doubt {
+  width: 100%;
+  height: 40px;
+  border: none;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-bottom: solid 2px #5bef36;
+  color: black;
+  outline: none;
+}*/
+/*.h2 .span{
+  justify-content: center;
+  padding : 0px 0px 70px ;
+}*/
+
+/*.form-container{
+  padding: 190px;
+}
+
+.h2{
+  font-size: 40px;
+}
+.main-container .p{
+  font-size: larger;
+}*/

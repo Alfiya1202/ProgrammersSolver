@@ -63,8 +63,8 @@
 .auth-btn{
     margin-top: 10px;
     padding: 10px 5px;
-    background-color: #009dff;
-    border: solid 1px #009dff;
+    background-color: #5bef36;
+    border: solid 1px #5bef36;
     color: white;
     border-radius: 5px;
     cursor: pointer;
@@ -74,12 +74,12 @@
 }
 
 .auth-btn:hover{
-    background-color: #018ce3;
+    background-color: #499b28;
 }
 
 .handle-switch-btn{
     background-color: transparent;
-    color: #007ac6;
+    color: #5bef36;
     border: none;
     font-size: 13px;
     cursor: pointer;

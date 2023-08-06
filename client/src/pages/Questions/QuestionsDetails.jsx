@@ -20,7 +20,7 @@ const QuestionsDetails = () => {
     const Navigate = useNavigate()
     const dispatch = useDispatch()
     const location = useLocation()
-    const url = 'https://stack-overflowclone0.netlify.app/'
+    const url = 'https://stack-overflowclone-1.netlify.app/'
     const User = useSelector((state) => (state.currentUserReducer))
     const handlePostAns = (e, answerLength) =>{
       e.preventDefault()
@@ -44,14 +44,63 @@ const QuestionsDetails = () => {
     const handleDelete = () => {
       dispatch(deleteQuestion(id, Navigate))
     }
+     
+    /*const handleUpVote = () => {
+      if (User === null) {
+        alert("Login or Signup to up vote a question");
+        Navigate("/Auth");
+      } else {
+        dispatch(voteQuestion(id, "upVote"));
+      }
+    };
+  
+    const handleDownVote = () => {
+      if (User === null) {
+        alert("Login or Signup to down vote a question");
+        Navigate("/Auth");
+      } else {
+        dispatch(voteQuestion(id, "downVote"));
+      }
+    };*/
+
+
+
+    /*const handleUpVote = () => {
+      if (User === null) {
+        alert("Login or Signup to up vote a question");
+        Navigate("/Auth");
+      } else {
+        dispatch(voteQuestion(id, "upVote"));
+      }
+    };
+  
+    const handleDownVote = () => {
+      if (User === null) {
+        alert("Login or Signup to down vote a question");
+        Navigate("/Auth");
+      } else {
+        dispatch(voteQuestion(id, "downVote"));
+      }
+    };*/
 
     const handleUpVote = () => {
-      dispatch(voteQuestion(id, 'upvote', User.result._id))
-    }
-
+      if (User === null) {
+        alert("Login or Signup to up vote a question");
+        Navigate("/Auth");
+      } else {
+        dispatch(voteQuestion(id, "upVote"));
+      }
+    };
+  
     const handleDownVote = () => {
-      dispatch(voteQuestion(id, 'downvote', User.result._id))
-    }
+      if (User === null) {
+        alert("Login or Signup to down vote a question");
+        Navigate("/Auth");
+      } else {
+        dispatch(voteQuestion(id, "downVote"));
+      }
+    };
+
 
   return (
     <div className='question-details-page'>
@@ -66,9 +115,9 @@ const QuestionsDetails = () => {
                                 <h1>{question.questionTitle}</h1>
                                 <div className="question-details-container-2">
                                     <div className="question-votes">
-                                        <img src={upvote} alt="upVote" width='18' className='votes-icon' onClick={handleUpVote}/>
+                                        <img src={upvote} alt="" width='18' className='votes-icon' onClick={handleUpVote} />
                                         <p>{question.upVote.length - question.downVote.length}</p>
-                                        <img src={downvote} alt="downVote" width='18' className='votes-icon'onClick={handleDownVote}/>
+                                        <img src={downvote} alt="" width='18' className='votes-icon'onClick={handleDownVote} />
                                     </div>
                                     <div style={{width: '100%'}}>
                                         <p className='question-body'>{question.questionBody}</p>

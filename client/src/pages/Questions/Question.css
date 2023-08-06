@@ -47,7 +47,7 @@
     font-size: 13px;
     border-radius: 2px;
     background-color: #e1ecf4;
-    color: #39739d;
+    color: #409644;
     text-decoration: none;
     line-height: 22px;
   }
@@ -99,16 +99,16 @@
   .post-ans-container form .post-ans-btn {
     margin: 20px 0px;
     padding: 10px 10px;
-    background-color: #009dff;
+    background-color: #5bef36;
     color: white;
-    border: solid 1px #009dff;
+    border: solid 1px #5bef36;
     border-radius: 4px;
     cursor: pointer;
     transition: 0.5s all;
   }
   
   .post-ans-container form .post-ans-btn:hover {
-    background-color: #0086d8;
+    background-color: #409644;
   }
   
   /* Display answer container */

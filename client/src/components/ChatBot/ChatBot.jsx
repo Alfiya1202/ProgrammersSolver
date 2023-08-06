@@ -10,8 +10,8 @@ import "./ChatBot.css";
 
 
 const configuration = new Configuration({
-  organization: "org-hezqpXcjVouTqlErcC4GZN0k",
-  apiKey: "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",
+  organization: "org-5idiTRfgustGTl9K9ZoxUmov",
+  apiKey: "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",
 });
 
 const openai = new OpenAIApi(configuration);
@@ -104,7 +104,7 @@ const ChatBot = () => {
       {isVerified ? (
         <>
           <h1 className="h1">
-            Programming<span className="span">GPT</span>
+            Virtual<span className="span">Assistant</span>
           </h1>
           <section>
             {chats && chats.length
@@ -142,14 +142,12 @@ const ChatBot = () => {
         </>
       ) : (
         <div className="main-container">
-          <div className="form-container">
-          <h2 >
+          <div className="form-container" align="center">
+          <h2>
             Welcome to{" "}
-            <b>
-              Programming<span>GPT</span>
-            </b>
+              Virtual<span>Assistant</span>
           </h2>
-          <p>To use ProgrammingGPT, first verify your email address</p>
+          <p>To use VirtualAssistant, first verify your email address</p>
           <form className="verification-form" onSubmit={handleSubmit}>
             <ToastContainer/>
             <label htmlFor="email">
@@ -160,7 +158,7 @@ const ChatBot = () => {
                 name="email"
                 id="email"
                 placeholder="Enter your registered email address..."
-              />
+              /><br/>
             </label><br/>
             {isOtpSent && (
               <label htmlFor="otp">

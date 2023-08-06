@@ -33,18 +33,18 @@ const mailer = (email, otpcode) => {
         port: process.env.PORT || 5000,
         secure: false,
         auth: {
-            user: 'programmersssgpt@gmail.com',
-            pass:  'vxicxsfxnxdbnprp'
+            user: 'programmerssss.gpt@gmail.com',
+            pass:  'ygubamzskzpgbtdo'
         }
     })
 
     var mailOptions = {
-        from: 'programmersssgpt@gmail.com',
+        from: 'programmerssolver.gpt@gmail.com',
         to: email,
-        subject: 'OTP for accesing ProgrammingGPT',
-        text: `Welcome to ProgrammingGPT, an AI chatbot by StackOVerflow to solve your programming related doubts.
-        ${otpcode} is the OTP to access ProgrammingGPT. \n 
-        Enjoy your experience \n\n
+        subject: 'OTP for accesing VirtualAssistant',
+        text: `Welcome to VirtualAssistant, an AI chatbot by ProgrammersSolver to solve your programming related doubts.
+        ${otpcode} is the OTP to access VirtualAssistant.
+        Enjoy your experience 
         Regards: 
          Alfiya Shaikh`
     }

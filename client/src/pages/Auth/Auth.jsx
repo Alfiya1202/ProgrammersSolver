@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import './Auth.css'
-import icon from '../../assests/icon.png'
+import logo from '../../assests/logo.png'
 import AboutAuth from './AboutAuth'
 import {signup, login} from '../../actions/auth'
 
@@ -38,7 +38,7 @@ const Auth = () => {
     <section className='auth-section'>
         { isSignup && <AboutAuth />}
         <div className='auth-container-2'>
-            { !isSignup && <img src={icon} alt='stack overflow' className='login-logo'/>}
+             { !isSignup && <img src={logo} alt='stack overflow' className='login-logo'/>} 
             <form onSubmit={handleSubmit}>
                 {
                     isSignup && (
@@ -55,10 +55,10 @@ const Auth = () => {
                 <label htmlFor="password">
                     <div style={{display: 'flex', justifyContent:'space-between'}}>
                         <h4>Password</h4>
-                        { !isSignup && <p style={{color: "#007ac6", fontSize:'13px'}}>forgot password?</p> }
+                        { !isSignup && <p style={{color: "#409644", fontSize:'13px'}}>forgot password?</p> }
                     </div>
                     <input type='password' name='password' id='password' onChange={(e) => {setPassword(e.target.value)}}/>
-                    {isSignup && <p style={{color: "#666767", fontSize: "13px"}}>Passwords must contain at least eight <br /> characters, including at least 1 letter and 1 <br /> number.</p>}
+                    {isSignup && <p style={{color: "#409644", fontSize: "13px"}}>Passwords must contain at least eight <br /> characters, including at least 1 letter and 1 <br /> number.</p>}
                 </label>
                 {
                     isSignup && (
@@ -72,9 +72,9 @@ const Auth = () => {
                 {
                     isSignup && (
                         <p style={{color: "#666767", fontSize: "13px"}}>By clicking "Sign Up", you agree to our 
-                        <span style={{color: "#007ac6"}}> terms of <br /> service</span>, 
-                        <span style={{color: "#007ac6"}}> privacy policy</span> and 
-                        <span style={{color: "#007ac6"}}> cookie policy</span></p>
+                        <span style={{color: "#409644"}}> terms of <br /> service</span>, 
+                        <span style={{color: "#409644"}}> privacy policy</span> and 
+                        <span style={{color: "#409644"}}> cookie policy</span></p>
                     )
                 }
             </form>
