@@ -1,5 +1,5 @@
 # StackOverflow-clone
-Clone of the famous website "Stack overflow" built using MERN Stack.
+Clone of the famous website "Programmers Solver" built using MERN Stack.
 
 ## Steps to use the application
 

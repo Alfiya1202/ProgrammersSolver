@@ -20,7 +20,7 @@ const QuestionsDetails = () => {
     const Navigate = useNavigate()
     const dispatch = useDispatch()
     const location = useLocation()
-    const url = 'https://stack-overflowclone-1.netlify.app/'
+    const url = 'https://programmerssolver.netlify.app/'
     const User = useSelector((state) => (state.currentUserReducer))
     const handlePostAns = (e, answerLength) =>{
       e.preventDefault()
@@ -45,43 +45,6 @@ const QuestionsDetails = () => {
       dispatch(deleteQuestion(id, Navigate))
     }
      
-    /*const handleUpVote = () => {
-      if (User === null) {
-        alert("Login or Signup to up vote a question");
-        Navigate("/Auth");
-      } else {
-        dispatch(voteQuestion(id, "upVote"));
-      }
-    };
-  
-    const handleDownVote = () => {
-      if (User === null) {
-        alert("Login or Signup to down vote a question");
-        Navigate("/Auth");
-      } else {
-        dispatch(voteQuestion(id, "downVote"));
-      }
-    };*/
-
-
-
-    /*const handleUpVote = () => {
-      if (User === null) {
-        alert("Login or Signup to up vote a question");
-        Navigate("/Auth");
-      } else {
-        dispatch(voteQuestion(id, "upVote"));
-      }
-    };
-  
-    const handleDownVote = () => {
-      if (User === null) {
-        alert("Login or Signup to down vote a question");
-        Navigate("/Auth");
-      } else {
-        dispatch(voteQuestion(id, "downVote"));
-      }
-    };*/
 
     const handleUpVote = () => {
       if (User === null) {
@@ -100,6 +63,65 @@ const QuestionsDetails = () => {
         dispatch(voteQuestion(id, "downVote"));
       }
     };
+
+
+
+
+    /*const handleUpVote = () => {
+      if (User === null) {
+        alert("Login or Signup to up vote a question");
+        Navigate("/Auth");
+      } else {
+        dispatch(voteQuestion(id, "upVote"));
+      }
+    };
+  
+    const handleDownVote = () => {
+      if (User === null) {
+        alert("Login or Signup to down vote a question");
+        Navigate("/Auth");
+      } else {
+        dispatch(voteQuestion(id, "downVote"));
+      }
+    };*/
+
+
+
+    /*const handleUpVote = () => {
+      if (User === null) {
+        alert("Login or Signup to up vote a question");
+        Navigate("/Auth");
+      } else {
+        dispatch(voteQuestion(id, "upVote"));
+      }
+    };
+  
+    const handleDownVote = () => {
+      if (User === null) {
+        alert("Login or Signup to down vote a question");
+        Navigate("/Auth");
+      } else {
+        dispatch(voteQuestion(id, "downVote"));
+      }
+    };*/
+
+    /*const handleUpVote = () => {
+      if (User === null) {
+        alert("Login or Signup to up vote a question");
+        Navigate("/Auth");
+      } else {
+        dispatch(voteQuestion(id, "upVote"));
+      }
+    };
+  
+    const handleDownVote = () => {
+      if (User === null) {
+        alert("Login or Signup to down vote a question");
+        Navigate("/Auth");
+      } else {
+        dispatch(voteQuestion(id, "downVote"));
+      }
+    };*/
 
 
   return (
@@ -181,3 +203,33 @@ const QuestionsDetails = () => {
 }
 
 export default QuestionsDetails
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

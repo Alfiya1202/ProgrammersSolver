@@ -1,6 +1,8 @@
+
 import axios from 'axios'
 
-const API = axios.create({baseURL: "https://stackoverflow-clone-2.onrender.com"})
+const API = axios.create({baseURL: "https://programmersssolver.onrender.com/"})
+//const API = axios.create({baseURL: "https://localhost:5000"})
 
 API.interceptors.request.use((req) => {
     if(localStorage.getItem('Profile')){
@@ -24,3 +26,7 @@ export const deleteAnswer = (id, answerId, noOfAnswers) => API.patch(`/answer/de
 export const fetchAllUsers = () => API.get('/user/getAllUsers');
 
 export const updateProfile = (id, updateData) => API.patch(`/user/update/${id}`, updateData)
+
+
+
+
